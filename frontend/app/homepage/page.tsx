@@ -21,7 +21,12 @@ export default function Home() {
           <h1>Unity Univerity</h1>
           <p>Free room locator </p>
         </div>
+        <div>
+
         <p className="text-sm ">9:20</p>
+        
+        </div>
+
       </div>
       <div className="mb-6">
         <h1 className="text-2xl font-bold mb-2">Select Building</h1>

@@ -1,0 +1,8 @@
+{"users":[{
+  "_id": 1,
+  "userId": "UUR94206",
+  "name": "Haileyesus Habtamu",
+  "email": "haileyesus@unity.edu",
+  "passwordHash": "...",
+  "role": "student"
+}]}
