@@ -83,13 +83,21 @@ const ReservedRoomsPage = () => {
   return (
     <div className=" w-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 sm:p-8 font-inter">
       <div className="h-screen mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
-        <header className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 sm:p-8 text-white text-center">
-          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-2">
-            Reserved Rooms
-          </h1>
-          <p className="text-blue-100 text-lg sm:text-xl">
-            View all current room reservations
-          </p>
+        <header className="bg-gradient-to-r from-blue-600 to-indigo-700 p-6 sm:p-8 text-white text-center flex">
+          <button
+            className=" bg-white text-blue-700 font-semibold px-4 py-2 rounded-lg shadow hover:bg-blue-50 transition"
+            onClick={() => window.history.back()}
+          >
+            &larr; Back
+          </button>
+            <div className="flex flex-col items-center justify-center flex-1 w-full">
+            <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-2">
+              Reserved Rooms
+            </h1>
+            <p className="text-blue-100 text-lg sm:text-xl">
+              View all current room reservations
+            </p>
+            </div>
         </header>
 
         <main className="p-6 sm:p-8">
