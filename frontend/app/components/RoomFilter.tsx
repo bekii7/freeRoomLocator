@@ -1,27 +1,28 @@
 
 import { FC } from "react";
-import TimeSlotDropdown from "./TimeSlotDropdown";
-import FeatureDropdown from "./FeatureDropdown";
-import CapacityDropdown from "./CapacityDropdown";
-import { div } from "framer-motion/client";
+import ChooseTime from "./ChooseTime";
 
-interface Props {
-  onFilter: () => void;
-}
 
-const RoomFilter: FC<Props> = ({ onFilter }) => (
+
+const RoomFilter: FC = () => (
   <div>
+    <ChooseTime />
   <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
-    <TimeSlotDropdown />
-    <FeatureDropdown />
-    <CapacityDropdown />
+    
+    <select className="border px-4 py-2 rounded">
+    <option>Any Features</option>
+    <option>Projector</option>
+    <option>Whiteboard</option>
+    <option>Smart Board</option>
+  </select>
+    <select className="border px-4 py-2 rounded">
+    <option>Any Capacity</option>
+    <option>up to 30</option>
+    <option>up to 50</option>
+    <option>up to 100</option>
+  </select>
     </div>
-    <button
-      onClick={onFilter}
-      className="bg-sky-900 text-white px-4 py-2 rounded w-full "
-    >
-      Find Available Rooms
-    </button>
+   
   </div>
 );
 

@@ -1,8 +1,107 @@
-{"users":[{
-  "_id": 1,
-  "userId": "UUR94206",
-  "name": "Haileyesus Habtamu",
-  "email": "haileyesus@unity.edu",
-  "passwordHash": "...",
-  "role": "student"
-}]}
+{
+  "users": [
+    {
+      "_id": "user_haileyesus_habtamu_1",
+      "userId": "UUR94206",
+      "name": "Haileyesus Habtamu",
+      "email": "haileyesus@unity.edu",
+      "passwordHash": "...",
+      "role": "student"
+    },
+    {
+      "_id": "user_almaz_bekele_2",
+      "userId": "UUR87991",
+      "name": "Dr. Almaz Bekele",
+      "email": "almaz.bekele@unity.edu",
+      "passwordHash": "$2a$10$xyz456hashedpassword",
+      "role": "faculty"
+    },
+    {
+      "_id": "user_samuel_desta_3",
+      "userId": "UUR55678",
+      "name": "Samuel Desta",
+      "email": "samuel.desta@unity.edu",
+      "passwordHash": "$2a$10$def789hashedpassword",
+      "role": "admin"
+    }
+  ],
+  "rooms": [
+    {
+      "_id": "room_b1_main_nursing",
+      "roomId": "c1",
+      "building": "C",
+      "department": "Economics",
+      "capacity": 50,
+      "amenities": ["projector", "whiteboard", "AC"],
+      "isAccessible": false,
+      "status": "available"
+    },
+    {
+      "_id": "room_b2_main_nursing",
+      "roomId": "B2",
+      "building": "B",
+      "department": "Nursing",
+      "capacity": 50,
+      "amenities": ["projector", "AC", "whiteboard"],
+      "isAccessible": false,
+      "status": "maintenance"
+    },
+    {
+      "_id": "room_b3_main_nursing",
+      "roomId": "j3",
+      "building": "J",
+      "department": "Lecturing Hall",
+      "capacity": 25,
+      "amenities": ["smart board", "AC", "whiteboard"],
+      "isAccessible": false,
+      "status": "maintenance"
+    }
+  ],
+  "courses": [
+    {
+      "_id": "course_math2032_1",
+      "courseCode": "MATH2032",
+      "courseName": "Linear Algebra II",
+      "department": "Mathematics",
+      "instructorId": "user_almaz_bekele_2",
+      "semester": "2025-2"
+    },
+    {
+      "_id": "course_phys1010_2",
+      "courseCode": "PHYS1010",
+      "courseName": "General Physics I",
+      "department": "Physics",
+      "instructorId": "user_almaz_bekele_2",
+      "semester": "2025-1"
+    }
+  ],
+  "bookings": [
+    {
+      "_id": "66512789d2a45a001234abcd",
+      "courseId": "course_math2032_1",
+      "roomId": "room_b1_main_nursing",
+      "instructorId": "user_almaz_bekele_2",
+      "day": "Monday",
+      "timeSlot": "08:00-10:00",
+      "status": "active"
+    },
+    {
+      "_id": "66512789d2a45a001234abce",
+      "courseId": "course_math2032_1",
+      "roomId": "room_b2_main_nursing",
+      "instructorId": "user_samuel_desta_3",
+      "day": "Wednesday",
+      "timeSlot": "10:00-12:00",
+      "status": "active"
+    },
+    {
+      "_id": "66512789d2a45a001234abcf",
+      "courseId": "course_phys1010_2",
+      "roomId": "room_b3_main_nursing",
+      "instructorId": "user_almaz_bekele_2",
+      "day": "Friday",
+      "timeSlot": "14:00-16:00",
+      "status": "cancelled"
+    }
+  ]
+}

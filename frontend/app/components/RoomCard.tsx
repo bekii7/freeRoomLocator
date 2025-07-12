@@ -8,7 +8,7 @@ interface RoomCardProps {
 }
 
 const RoomCard: FC<RoomCardProps> = ({ name, capacity, features, onReserve }) => (
-  <div className="border p-4 rounded-xl shadow-sm w-full md:w-1/3">
+  <div className="border p-4 rounded-xl shadow-sm w-full md:w-1/3 lg:w-1/4">
     <div className="flex justify-between mb-2">
       <p className="font-semibold">Room {name}</p>
       <span className="text-green-500">Available</span>
